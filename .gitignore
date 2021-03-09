@@ -1,3 +1,7 @@
 # ignore .env files
 .env
 
+
+# ignore default inventory
+hosts
+
