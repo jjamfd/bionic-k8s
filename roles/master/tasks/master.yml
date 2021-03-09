@@ -20,7 +20,7 @@
 
 - name: install Pod network
   become_user: ubuntu
-  shell: kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/b2f9d5ebc0e8dc1382476a53f5e0d6da91f810c0/Documentation/kube-flannel.yml >> pod_network_setup.txt
+  shell: kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/be2cb996dab08c68614a05e3bf30020c0a9fbafc/Documentation/kube-flannel.yml >> pod_network_setup.txt
   args:
     chdir: $HOME
     creates: pod_network_setup.txt
