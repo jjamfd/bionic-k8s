@@ -11,7 +11,7 @@ A simple ansible buildout designed to configure a Kubernetes cluster on Ubuntu 1
 - Three or more Ubuntu 18.04 servers
 - SSH access via root or a user with passwordless sudo
 - Servers should be able to communicate over a private network
-  - you may have issues registering worker nodes if your master node has a default private network which is inaccessible to the worker nodes
+  - Issues may arise while registering worker nodes if your master node has a default private network which is inaccessible to the worker nodes
 
 **Local requirements**
 - Python 3.8 and pipenv installed
@@ -51,4 +51,4 @@ ANSIBLE_REMOTE_USER=someuser
 # pipenv run ansible-playbook register-workers.yml
 ```
 
-NOTE: you must first run `pipenv install` or optionally run ansible-playbook without prepending `pipenv run`
+NOTE: Run `pipenv install` first, or optionally run ansible-playbook without prepending `pipenv run`.
