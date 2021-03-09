@@ -1,0 +1,12 @@
+[master]
+MASTER_NODE_IP_ADDRESS_OR_HOSTNAME
+
+
+[workers]
+WORKER_NODE_IP_ADDRESS_OR_HOSTNAME
+WORKER_NODE_IP_ADDRESS_OR_HOSTNAME
+
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
+
