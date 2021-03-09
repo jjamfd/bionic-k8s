@@ -2,13 +2,15 @@
 A simple ansible buildout designed to configure a Kubernetes cluster on Ubuntu 18.04.
 
 **Features**
-- Installs docker and kubernetes dependencies
-- Creates a remote admin user named 'ubuntu' on the master node
-- Installs flannel network overlay on cluster
-- Optional pipenv integration to use pinned version of ansible (2.10.6)
+- Installs docker and kubernetes
+- Creates a remote non-root user named 'ubuntu' with passwordless sudo
+on all nodes
+- Installs the flannel network overlay v0.13.0
+- Optional `pipenv` integration
 
 **Server Requirements**
-- Three or more Ubuntu 18.04 servers
+- Three or more Ubuntu 18.04 servers with at least 2vCPU's and 2GB of
+RAM each
 - SSH access via root or a user with passwordless sudo
 - Servers should be able to communicate over a private network
   - Issues may arise while registering worker nodes if the master node has a default private network which is inaccessible to the worker nodes
