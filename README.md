@@ -15,6 +15,7 @@ A simple ansible buildout designed to configure a Kubernetes cluster on Ubuntu 1
 
 ##**Local requirements**
 - Python 3.8 and pipenv installed
+
 OR
 - Ansible installed (tested with 2.10.6)
 
@@ -49,3 +50,5 @@ ANSIBLE_REMOTE_USER=someuser
 ```
 # pipenv run ansible-playbook register-workers.yml
 ```
+
+NOTE: you must first run `pipenv install` or optionally run ansible-playbook without prepending `pipenv run`
